@@ -1,0 +1,496 @@
+<template>
+	<view>
+		<view class="banner">
+			<image class="banner-img" :src="banner.image_url"></image>
+			<view class="banner-title"><view class="banner-title_info">{{banner.title}}</view></view>
+		</view>
+		<view class="article-meta">
+			<text class="article-author">{{banner.source}}</text>
+			<text class="article-text">发表于</text>
+			<text class="article-time">{{banner.datetime}}</text>
+		</view>
+		<view class="article-content">
+			<rich-text :nodes="content"></rich-text>
+		</view>
+		<view class="comment-wrap"></view>
+		<view class="content">
+		</view>
+	</view>
+</template> 
+
+<script>
+	// #ifdef APP-PLUS
+		// 如下为分享内容定义，可根据业务需求自行定义
+		var strShareUrl = "https://www.topjui.com/"
+		var strShareTitle = "TopJUI前端框架,致力于打造既美观实用又能快速开发的后台管理前端框架，解决传统EasyUI的性能和功能问题！"
+		var strShareSummary = "佐佑科技科技有限公司主要从事企业信息化咨询、信息化建设、软件研发等业务。"
+		var strShareImageUrl = "https://ewsd-shanghai.oss-cn-shanghai.aliyuncs.com/static/app/images/logo.png"
+		
+		//以下为计算菜单的nview绘制布局，为固定算法，使用者无关关心
+		var screenWidth = plus.screen.resolutionWidth
+		//以360px宽度屏幕为例，上下左右边距及2排按钮边距留25像素，图标宽度55像素，同行图标间的间距在360宽的屏幕是30px，但需要动态计算，以此原则计算4列图标分别的left位置
+		//图标下的按钮文字距离图标5像素，文字大小12像素
+		//底部取消按钮高度固定为44px
+		//TODO 未处理横屏和pad，这些情况6个图标应该一排即可
+		var margin = 25,
+			iconWidth = 55,
+			icontextSpace = 5,
+			textHeight = 12
+		var left1 = margin / 360 * screenWidth
+		var iconSpace = (screenWidth - (left1 * 2) - (iconWidth * 4)) / 3 //屏幕宽度减去左右留白间距，再减去4个图标的宽度，就是3个同行图标的间距
+		if (iconSpace <= 5) { //屏幕过窄时，缩小边距和图标大小，再算一次
+			margin = 15
+			iconWidth = 40
+			left1 = margin / 360 * screenWidth
+			iconSpace = (screenWidth - (left1 * 2) - (iconWidth * 4)) / 3 //屏幕宽度减去左右留白间距，再减去4个图标的宽度，就是3个同行图标的间距
+		}
+		var left2 = left1 + iconWidth + iconSpace
+		var left3 = left1 + (iconWidth + iconSpace) * 2
+		var left4 = left1 + (iconWidth + iconSpace) * 3
+		var top1 = left1
+		var top2 = top1 + iconWidth + icontextSpace + textHeight + left1
+	// 	console.log("screenWidth: " + screenWidth + " ;height: " + plus.screen.resolutionHeight);
+	// 	console.log("left1: " + left1);
+	// 	console.log("iconSpace: " + iconSpace);
+		var nvMask = new plus.nativeObj.View("nvMask", { //先创建遮罩层
+			top: '0px',
+			left: '0px',
+			height: '100%',
+			width: '100%',
+			backgroundColor: 'rgba(0,0,0,0.2)'
+		});
+		nvMask.addEventListener("click", function() { //处理遮罩层点击
+			nvMask.hide();
+			nvImageMenu.hide();
+		})
+		var nvImageMenu = new plus.nativeObj.View("nvImageMenu", { //创建底部图标菜单
+			bottom: '0px',
+			left: '0px',
+			height: '264px',
+			width: '100%',
+			backgroundColor: 'rgb(255,255,255)'
+		});
+		//绘制底部图标菜单的内容
+		nvImageMenu.draw([
+			{
+				tag: 'rect',//菜单顶部的分割灰线
+				color: '#e7e7e7',
+				position: {
+					bottom: '0px',
+					height: '1px'
+				}
+			},
+			{
+				tag: 'font',
+				id: 'sharecancel',//底部取消按钮的文字
+				text: '取消分享',
+				textStyles: {
+					size: '14px'
+				},
+				position: {
+					bottom: '0px',
+					height: '44px'
+				}
+			},
+			{
+				tag: 'rect',//底部取消按钮的顶部边线
+				color: '#e7e7e7',
+				position: {
+					bottom: '45px',
+					height: '1px'
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgwechatfriend',
+				src: '/static/img/sharemenu/wechatfriend.png',
+				position: {
+					top: top1,
+					left: left1,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontwechatfriend',
+				text: '微信好友',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top1 + iconWidth + icontextSpace,
+					left: left1,
+					width: iconWidth,
+					height: textHeight
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgwechatmoments',
+				src: '/static/img/sharemenu/wechatmoments.png',
+				position: {
+					top: top1,
+					left: left2,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontwechatmoments',
+				text: '微信朋友圈',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top1 + iconWidth + icontextSpace,
+					left: left2 - 2.5,
+					width: iconWidth + 5,
+					height: textHeight
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgweibo',
+				src: '/static/img/sharemenu/weibo.png',
+				position: {
+					top: top1,
+					left: left3,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontweibo',
+				text: '微博',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top1 + iconWidth + icontextSpace,
+					left: left3,
+					width: iconWidth,
+					height: textHeight
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgqq',
+				src: '/static/img/sharemenu/qq.png',
+				position: {
+					top: top1,
+					left: left4,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontqq',
+				text: 'QQ',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top1 + iconWidth + icontextSpace,
+					left: left4,
+					width: iconWidth,
+					height: textHeight
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgcopyurl',
+				src: '/static/img/sharemenu/copyurl.png',
+				position: {
+					top: top2,
+					left: left1,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontcopyurl',
+				text: '复制',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top2 + iconWidth + icontextSpace,
+					left: left1,
+					width: iconWidth,
+					height: textHeight
+				}
+			},
+			{
+				tag: 'img',
+				id: 'imgmore',
+				src: '/static/img/sharemenu/more.png',
+				position: {
+					top: top2,
+					left: left2,
+					width: iconWidth,
+					height: iconWidth
+				}
+			},
+			{
+				tag: 'font',
+				id: 'fontmore',
+				text: '更多',
+				textStyles: {
+					size: textHeight
+				},
+				position: {
+					top: top2 + iconWidth + icontextSpace,
+					left: left2,
+					width: iconWidth,
+					height: textHeight
+				}
+			},
+			//如果想要增加更多按钮，请在这里继续添加，第二列还有2个空位
+		])
+		nvImageMenu.addEventListener("click", function(e) { //处理底部图标菜单的点击事件，根据点击位置触发不同的逻辑
+			// console.log("click menu"+JSON.stringify(e));
+			if (e.screenY > plus.screen.resolutionHeight - 44) { //点击了底部取消按钮
+				nvMask.hide();
+				nvImageMenu.hide();
+			} else if (e.clientX < 5 || e.clientX > screenWidth - 5 || e.clientY < 5) {
+				//屏幕左右边缘5像素及菜单顶部5像素不处理点击
+			} else { //点击了图标按钮
+				var iClickIndex = -1 //点击的图标按钮序号，第一个图标按钮的index为0
+				var iRow = e.clientY < (top2 - (left1 / 2)) ? 0 : 1
+				var iCol = -1
+				if (e.clientX < (left2 - (iconSpace / 2))) {
+					iCol = 0
+				} else if (e.clientX < (left3 - (iconSpace / 2))) {
+					iCol = 1
+				} else if (e.clientX < (left4 - (iconSpace / 2))) {
+					iCol = 2
+				} else {
+					iCol = 3
+				}
+				if (iRow == 0) {
+					iClickIndex = iCol
+				} else {
+					iClickIndex = iCol + 4
+				}
+				console.log("点击按钮的序号: " + iClickIndex);
+				if (iClickIndex >= 0 && iClickIndex <= 5) { //处理具体的点击逻辑，此处也可以自行定义逻辑。如果增减了按钮，此处也需要跟着修改
+					var strProvider="",strScene=""
+					switch (iClickIndex) {
+						case 0:
+							strProvider = "weixin"
+							strScene = "WXSceneSession"
+							break;
+						case 1:
+							strProvider = "weixin"
+							strScene = "WXSenceTimeline"
+							break;
+						case 2:
+							strProvider = "sinaweibo"
+							break;
+						case 3:
+							strProvider = "qq"
+							break;
+						case 4:
+							uni.setClipboardData({
+								data: strShareUrl,
+								complete() {
+									uni.showToast({
+										title: "已复制到剪贴板"
+									})
+								}
+							})
+							break;
+						case 5:
+							plus.share.sendWithSystem({
+								content: strShareUrl,
+							})
+							break;
+					}
+					if (strProvider!="") { //点击了0-3序号的这4个按钮
+						uni.share({
+							provider: strProvider,
+							scene:strScene,
+							type: 0,
+							href: strShareUrl,
+							title: strShareTitle,
+							summary: strShareSummary,
+							imageUrl: strShareImageUrl,
+							success: function(res) {
+								console.log("success:" + JSON.stringify(res));
+							},
+							fail: function(err) {
+								console.log("fail:" + JSON.stringify(err));
+							}
+						})
+					}
+				}
+			}
+		})
+		/* nvImageMenu.addEventListener("touchstart", function(e) {
+			if (e.screenY > (plus.screen.resolutionHeight - 44)) {
+				//TODO 这里可以处理按下背景变灰的效果
+			}
+		})
+		nvImageMenu.addEventListener("touchmove", function(e) {
+			//TODO 这里可以处理按下背景变灰的效果
+			if (e.screenY > plus.screen.resolutionHeight - 44) {}
+		})
+		nvImageMenu.addEventListener("touchend", function(e) {
+			//TODO 这里可以处理释放背景恢复的效果
+		})
+		*/
+		// #endif
+	const FAIL_CONTENT = '<p>获取信息失败</p>';
+	export default {
+		data() {
+			return {
+				banner: {},
+				content: '',
+				title: ''
+			}
+		},
+		onShareAppMessage() {
+			return {
+				
+				path: '/pages/system/article_details/article_details?query=' + JSON.stringify(this.banner)
+			}
+		},
+		onLoad(event) {
+			// 目前在某些平台参数会被主动 decode，暂时这样处理。
+			// try {
+			// 	this.banner = JSON.parse(decodeURIComponent(event.query));
+			// } catch (error) {
+			// 	this.banner = JSON.parse(event.query);
+			// }
+			this.banner = {
+				image_url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg',
+				title: '医院主任贪百万被抓问这么严重吗',
+				source: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg',
+				datetime: '2021-01-30',
+			}
+			this.content = "TopJUI前端框架,致力于打造既美观实用又能快速开发的后台管理前端框架，解决传统EasyUI的性能和功能问题"
+			this.getDetail();
+// 			uni.setNavigationBarTitle({
+// 				title: this.banner.title
+// 			});
+		},
+		onBackPress() {
+			//监听back键，关闭弹出菜单
+			if (nvImageMenu.isVisible()) {
+				nvImageMenu.hide()
+				nvMask.hide()
+				return true
+			}
+		},
+		onNavigationBarButtonTap(e) {
+			switch (e.type) {
+				case "share": //点击分享按钮
+					//TODO 未处理h5，h5应调用qq浏览器等自带的share api，如果浏览器不自带share，那么分享图标不应该显示。或者从简的话，h5整个就不显示分享按钮
+					// #ifdef APP-PLUS
+					nvMask.show()
+					nvImageMenu.show() //5+应支持从底部向上弹出的动画
+					// #endif
+					break;
+			}
+		},
+		methods: {
+			getDetail() {
+				uni.request({
+					url: 'https://unidemo.dcloud.net.cn/api/news/36kr/' + this.banner.post_id,
+					success: (result) => {
+						if (result.statusCode == 200) {
+							this.content = result.data.content;
+						} else {
+							this.content = FAIL_CONTENT;
+						}
+					}
+				});
+			},
+		}
+	}
+</script>
+
+<style>
+	.content {
+		text-align: center;
+		height: 400upx;
+		display: none;
+	}
+	uni-page-head{
+		border-bottom: 0;
+	}
+	.title {
+		font-size: 36upx;
+		color: #8f8f94;
+	}
+	.banner {
+		width: 100%;
+		height: 400upx;
+		overflow: hidden;
+		position: relative;
+		background-color: #ccc;
+	}
+	.banner-img {
+		width: 100%;
+		height: 400upx;
+	}
+
+	.banner-title {
+        height: 120upx;
+		overflow: hidden;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 20upx;
+		font-size: 32upx;
+		font-weight: 400;
+		line-height: 60upx;
+		color: white;
+		z-index: 11;
+		background: rgba(0,0,0,.5);
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		/* overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap; */
+	}
+	.banner-title_info{
+		width: 95%;
+	}
+	.article-meta {
+		padding: 20upx 40upx;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		color: gray;
+	}
+
+	.article-text {
+		font-size: 26upx;
+		line-height: 50upx;
+		margin: 0 20upx;
+	}
+
+	.article-author,
+	.article-time {
+		font-size: 30upx;
+	}
+
+	.article-content {
+		padding: 0 30upx;
+		overflow: hidden;
+		font-size: 30upx;
+		margin-bottom: 30upx;
+	}
+	.grace-popover-menu{
+		bottom: 60upx;
+	}
+	
+</style>

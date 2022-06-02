@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>电子印章</title>
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+
+			.padding-lr {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+			#pdfDom {
+				background-color: #fff;
+				width: 100vw;
+				height: 100vh;
+			}
+
+			.font-main {
+				font-size: 16px;
+				text-align: center;
+				padding: 15px 0;
+			}
+
+			.pdf-btn {
+				width: 100px;
+				height: 30px;
+				border: 1px solid #e7e7e7;
+				border-radius: 5px;
+				margin-top: 20px;
+				font-size: 13px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.art-box {
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+
+			.art-font {
+				font-size: 12px;
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container" id="pdfDom">
+			<div class="padding-lr">
+				<div class="font-main">天气高温预警</div>
+				<div class="art-box">{{html}}</div>
+				<div class="flex align-center justify-end">
+					<div class="art-font">
+						<div class="font-second">日期：{{nowDate}}</div>
+						<div class="font-second">盖章：</div>
+					</div>
+				</div>
+				<div class="pdf-btn" @click="getToPdf">生成pdf</div>
+			</div>
+		</div>
+		<!-- uni 的 SDK -->
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js">
+		</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+		<!-- <script src="./js/html2canvas.min.js"></script> -->
+		<script src="https://cdn.bootcss.com/jspdf/1.3.4/jspdf.debug.js"></script>
+		<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+		<script>
+			new Vue({
+				data() {
+					return {
+						canvasName: 'yinzhang',
+						htmlTitle: '电子印章',
+						companyName: '湖南佐佑时代科技有限公司',
+						tips: '测试章',
+						nowDate: '2021-08-10',
+						html: '北京市疾病预防控制中心微信公众号7月12日消息，北京市气象台2021年7月11日09时00分发布暴雨黄色预警信号。预计，11日17时至13日08时，本市将出现暴雨到大暴雨天气。目前， 暴雨黄色预警中， 地质灾害气象风险随之增加， 强降雨对日常生活、 对交通运输影响较大， 请减少不必要的出行， 驾车注意避让积水路段， 山区需防次生地质灾害。强降雨天气， 十大健康提示需注意夏季外环境因素有利于肠道传染病病原微生物的繁殖和传播， 所以个人和居家卫生非常必要。北京市疾病预防控制中心指出：“ 任何单位和个人， 一旦发现饮水出现异常， 及时报告当地卫生部门， 这是我们每个人的责任和义务。 只要我们大家共同努力， 积极行动起来， 从我做起， 从现在做起， 提高防病意识， 养成良好卫生习惯， 保障健康， 安全度过北京汛期',
+						x: 0,
+						sealImgUrl: 'https://zysd-emis.oss-cn-shanghai.aliyuncs.com/user/avatar/ewsd0001/9a186e4407554bdf8e14ee457dbffeb5.png?time=' +
+							new Date().valueOf()
+					}
+				},
+				mounted() {
+					// this.nowDate = new Date()
+				},
+				methods: {
+					getToPdf() {
+						console.log("电子签章")
+						var that = this
+						let dom = document.querySelector('#pdfDom')
+						setTimeout(() => {
+							var title = '电子签章'
+							let opts = {
+								dpi: 750, //分辨率  越高清晰度越高
+								logging: false, //日志开关，便于查看html2canvas的内部执行流程
+								useCORS: false, // 【重要】开启跨域配置
+								width: 480,
+								scale: 6,
+								allowTaint: true,
+							}
+							html2canvas(dom, opts).then(function(canvas) {
+								let contentWidth = canvas.width
+								let contentHeight = canvas.height
+								let pageHeight = contentWidth / 592.28 * 841.89
+								let leftHeight = contentHeight
+								let position = 0
+								let imgWidth = 595.28
+								let imgHeight = 592.28 / contentWidth * contentHeight
+								let pageData = canvas.toDataURL('image/jpeg', 1.0)
+
+								// let imgBolb = that.convertBase64UrlToBlob(pageData, '文件流.img')
+								// console.log("imgBolb", imgBolb)
+
+								// console.log("pageData", pageData)
+
+								let pdfDoc = new jspdf('', 'pt', 'a4')
+								// let pdfDoc = new jspdf('p', 'px', 'a4')
+								if (leftHeight < pageHeight) {
+									pdfDoc.addImage(pageData, 'JPEG', 0, 0, imgWidth, imgHeight)
+								} else {
+									while (leftHeight > 0) {
+										pdfDoc.addImage(pageData, 'JPEG', 0, position, imgWidth,
+											imgHeight)
+										leftHeight -= pageHeight
+										position -= 841.89
+										if (leftHeight > 0) {
+											pdfDoc.addPage()
+										}
+									}
+								}
+								that.$nextTick(() => {
+									console.log("pdfDoc", pdfDoc)
+									// pdfDoc.output("blob");
+									// pdfDoc.output('dataurlnewwindow') 
+									pdfDoc.save(title + new Date().getTime() + '.pdf')
+
+									// var blob = PDF.output( 'blob' )//输出为blob 
+									// console.log(blob); 
+									// //blob转url 
+									// var urll = window.URL.createObjectURL(new File( [blob], 'a_name.pdf', { type: 'application/pdf' } )) 
+									// //用PDFjs打开这个url能看到pdf 可以打印 /下载等
+									// //viewer.html 时本地路径 具体看下面
+									// window.open('../static/pdf/web/viewer.html?file='+encodeURIComponent(urll)) 
+								})
+							})
+						}, 100)
+					},
+					convertBase64UrlToBlob(dataurl, filename) {
+						var arr = dataurl.split(',')
+						var mime = arr[0].match(/:(.*?);/)[1]
+						var bstr = atob(arr[1])
+						var n = bstr.length
+						var u8arr = new Uint8Array(n)
+						while (n--) {
+							u8arr[n] = bstr.charCodeAt(n)
+						}
+						return new File([u8arr], filename, {
+							type: mime
+						})
+					},
+				}
+			}).$mount('.container');
+		</script>
+	</body>
+</html>

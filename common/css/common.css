@@ -1,0 +1,282 @@
+
+/* 动画 */
+.transition-box{
+	transition-duration: 0s;
+	transition: all .6s ease-in-out 0s;
+	transform: translateX(0px);
+}
+.transition-box:after{
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 200%;
+	height: 200%;
+	transform: scale(.5);
+	transform-origin: 0 0;
+	pointer-events: none;
+}
+/* 表单 form */
+
+.transfrom-180{
+	transform: rotate(-180deg);
+	transition: all 0.15s;
+}
+.transfrom-0{
+	transform: rotate(0deg);
+	transition: all 0.15s;
+}
+
+/* 单选 */
+/deep/.u-radio__label{
+	font-size: 13px !important;
+}
+
+/* 单选 */
+/deep/.u-checkbox__label{
+	font-size: 13px !important;
+}
+
+/* 搜索框 */
+.u-placeholder-class{
+	/* font-size: 13px; */
+}
+
+/* 自定义头部  下拉 */
+/deep/.uni-page-head__title{
+	/* text-align: left !important; */
+}
+.slot-wrap{
+	margin-left: 32px;
+}
+
+/deep/.u-dropdown__menu__item__text {
+	color: #fff !important;
+	font-size: 16px !important;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+/deep/ .u-dropdown__menu__item__arrow .uicon-arrow-down:before {
+	color: #fff;
+}
+
+.pos-add-absolute {
+	line-height: 25px;
+	position: absolute;
+	top: calc(110rpx + var(--status-bar-height));
+	right: 15px;
+	z-index: 999;
+	transition: opacity 0.3s linear 0s;
+	box-shadow: 0 0 10upx 0 rgba(0, 0, 0, 0.2);
+}
+
+.pos-add-box {
+	transform: translateY(-100%);
+	transition-duration: 0.3s;
+}
+
+.add-transform {
+	transform: translateY(0px);
+}
+
+.pos-absolute-left {
+	position: absolute;
+	z-index: 15;
+	left: 6px;
+	top: 10px;
+}
+
+.pos-absolute-right {
+	position: absolute;
+	z-index: 15;
+	right: 12px;
+	top: 10px;
+}
+
+/* 行数 */
+.text-three-hidden {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; //指定行数
+	-webkit-box-orient: vertical;
+}
+
+.text-two-hidden {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 2; //指定行数
+	-webkit-box-orient: vertical;
+}
+
+.text-one-hidden {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 1; //指定行数
+	-webkit-box-orient: vertical;
+}
+
+/* 定位 */
+.pos-fixed {
+	position: fixed;
+	bottom: 80rpx;
+	right: 30rpx;
+	z-index: 5;
+}
+
+.pos-relative {
+	position: relative;
+}
+
+.pos-absolute-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.pos-strike {
+	position: sticky;
+	top: 0;
+	z-index: 5;
+}
+
+.pos-top-fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 44px;
+	left: 0;
+	z-index: 2;
+	/* #ifdef APP-PLUS */
+	top: 44px;
+	/* #endif */
+}
+
+.pos-fixed-bottom {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	z-index: 2;
+	bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pos-fixed-bottom-box {
+	width: 80%;
+	margin-right: 0 auto;
+}
+
+/* 为空提示 */
+.empty {
+	width: 100%;
+	/* display: flex; */
+	/* align-items: center; */
+	/* justify-content: center; */
+	padding: 30% 0;
+}
+
+.empty .loadingIcon:before {
+	animation: cuIcon-spin 2s infinite linear
+}
+
+.empty image {
+	width: 60px;
+	height: 50px;
+	border-radius: 10rpx;
+	opacity: 0.8;
+}
+
+/* 列表 */
+.art-list-left {
+	width: 30%;
+	width: 80rpx;
+	height: 80rpx;
+	border: 5px;
+}
+
+.art-list-right {
+	width: 80%;
+}
+
+/* 图标 */
+.box-font-list {
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+/* 底部申请按钮 */
+.bottom-btn-appro view {
+	width: 75%;
+	margin: 20px auto;
+	border-radius: 8px;
+	height: 44px;
+	line-height: 44px;
+}
+
+.bottom-btn-appro-two view {
+	width: 100%;
+	margin: 0 auto;
+	height: 44px;
+	line-height: 44px;
+}
+
+/* 文本 */
+.text-transform30 {
+	transform: rotate(-30deg);
+}
+
+.text-opacity5 {
+	opacity: 0.5;
+}
+
+.text-opacity8 {
+	opacity: 0.8;
+}
+
+.fixed-content {
+	padding-top: 40px;
+}
+
+.font-size-max {
+	font-size: 56rpx !important;
+}
+
+.width-80 {
+	width: 80rpx;
+	height: 80rpx;
+}
+
+.text-nowrap {
+	white-space: nowrap
+}
+
+.border-round {
+	border-radius: 12rpx;
+	overflow: hidden;
+}
+
+.task-line {
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 1px dashed #f5f5f5;
+}
+
+.art-botton {
+	width: 80%;
+	text-align: center;
+	margin: 60rpx auto;
+}

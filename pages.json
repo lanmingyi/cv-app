@@ -1,0 +1,1812 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "pages/index/guide",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "明图科技"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "明图科技"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				},
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "MISBoot 快速开发平台",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/login/author",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "企业微信授权登录",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/template/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "模板"
+			}
+		},
+		{
+			"path": "pages/office/template/add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "模板新建"
+			}
+		},
+		{
+			"path": "pages/office/template/details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "模板详情"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"text": "\ue685",
+							"fontSrc": "/static/iconfont.ttf",
+							"width": "40px",
+							"fontSize": "22px",
+							"color": "#fff",
+							"background": "#3b9cff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/component/bluetooth/bluetooth",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "蓝牙"
+			}
+		},
+		{
+			"path": "pages/mine/mine_details/mine_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/office/telephone/telephone",
+			"style": {
+				"navigationBarTitleText": "通讯录"
+			}
+		},
+		{
+			"path": "pages/mine/setting/setting",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "系统设置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/setting/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "设置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/myQR/myQR",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "二维码",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/feature",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "功能",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/mine/theme/theme",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "主题",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/telephone/chat/chat",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "设置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+
+		{
+			"path": "pages/office/artcile/artcile",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "协同办公",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/office/article_details/article_details",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/office/article_details/details",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/feedback/feedback",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "信息反馈",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/echarts/echarts",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "echarts图表",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/up_images/up_images",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "上传图片",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/wxcharts/wxcharts",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "图表",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/crop/crop",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "图片裁剪",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/telephone/u_details/u_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "个人信息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/voice/voice",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "录音",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/bg_audio/bg_audio",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "背景音频",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/upload_file/upload_file",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "上传文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/download_file/download_file",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "下载文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/file/file",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/push/push",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "消息推送",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/speech/speech",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "录音",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/payment/payment",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "支付",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_network_type/get_network_type",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "网络",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_system_info/get_system_info",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "系统信息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/scan_code/scan_code",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "扫码",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/clipboard/clipboard",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "剪贴",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_location/get_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "当前位置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/open_location/open_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "当前位置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/choose_location/choose_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "地图",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/button/button",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "按钮",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/checkbox/checkbox",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "选择框",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/form/form",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/input/input",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "input",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/label/label",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "label",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/picker/picker",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "picker",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/picker-view/picker-view",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "picker-view",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/radio/radio",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "radio",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/slider/slider",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "slider",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/textarea/textarea",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "textarea",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/switch/switch",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "switch",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/video/video",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "video",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/table/table",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "table",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/data-table/data-table",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "data-table",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/select/select",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "select",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/date/date",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "date",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/select_info/select_info",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "下拉框",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/share/share",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "分享",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/swiper/swiper",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "轮播图",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/mpvue-picker/mpvue-picker",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "多列选择",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/lotteryDraw/lotteryDraw",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "抽奖活动",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/lazyload/lazyload",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "懒加载",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/telephone/htmlchat/htmlchat",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/telephone/message/message",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/modal/modal",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "弹窗",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/canvas/canvas",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "创建绘画",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/leave/leave",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "休假",
+				"navigationBarTextStyle": "white"
+
+			}
+		},
+		{
+			"path": "pages/office/application/leave/leaveEdit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/leave/leaveDetails",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "休假详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/leave/leaveAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "新增",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/animate/animate",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "动画库",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/timeline/timeline",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "时间轴",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/steps/steps",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "步骤",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/progressbar/progressbar",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "进度条",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/badge/badge",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "数字角标",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/overtime/overtime",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "加班",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/overtime/overtime_details/overtime_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "加班详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/overtime/overtime_edit/overtime_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/overtime/overtime_add/overtime_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加加班",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/conference/conference",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/conference/conference_details/conference_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/conference/conference_add/conference_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加会议",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/conference/conference_edit/conference_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/used_cars/used_cars",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "用车",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/used_cars/used_details/used_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "用车详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/used_cars/used_add/used_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加用车",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/used_cars/used_edit/used_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/evection/evection",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "出差",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/evection/evection_add/evection_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/evection/evection_edit/evection_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/evection/evection_details/evection_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "出差详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/task/task",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "任务",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/task/task_list",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "任务清单",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#fff",
+						"backgroundColor": "#3b9cff",
+						"buttons": [{
+							"text": "\ue71c",
+							"fontSrc": "/static/iconfont.ttf",
+							"width": "40px",
+							"fontSize": "18px",
+							"color": "#fff",
+							"background": "#3b9cff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/task/taskAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加任务",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/task/taskAddSon",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加任务清单",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/task/taskDetails",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "任务详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/task/taskEdit",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/journal",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "日志",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/journal/journal_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "写日志",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/journal_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "日志详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/index/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "写日志",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/daily/daily",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "写日报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/weekly/weekly",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "写周报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/journal/monthly/monthly",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "写月报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/notice/notice",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "通知公告",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/notice/publicAnnou",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "公告",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/notice/notice_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "发布",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#fff",
+						"backgroundColor": "#3b9cff",
+						"buttons": [{
+							"text": "\ue71c",
+							"fontSrc": "/static/iconfont.ttf",
+							"width": "40px",
+							"fontSize": "18px",
+							"color": "#fff",
+							"background": "#3b9cff"
+						}]
+					}
+				}
+			}
+		}, {
+			"path": "pages/office/application/notice/notice_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/notice/news",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "新闻",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/notice/new_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "发布",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#fff",
+						"backgroundColor": "#3b9cff",
+						"buttons": [{
+							"text": "\ue71c",
+							"fontSrc": "/static/iconfont.ttf",
+							"width": "40px",
+							"fontSize": "18px",
+							"color": "#fff",
+							"background": "#3b9cff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/notice/news_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "新闻详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/test/test",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "测试",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/count_down/count_down",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "倒计时",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/star/star",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "评分",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/telephone/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#3b9cff",
+						"backgroundColor": "#3b9cff",
+						"buttons": [{
+							"fontSrc": "/static/iconfont.ttf",
+							"text": "\ue537",
+							"width": "auto",
+							"fontSize": "28px",
+							"color": "#fff"
+						}],
+						"searchInput": {
+							"backgroundColor": "#fff",
+							"borderRadius": "6px",
+							"placeholder": "根据姓名搜索",
+							"autoFocus": true
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/metting/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议室",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_reserve",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议室预定",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/reserve_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "预定详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议申请",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_joinofmine",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的会议",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_reserveofmine",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的预定",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/metting/metting_apply",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "会议申请",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/circulate/circulate",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "传阅",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/circulate/details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "传阅详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/flow/flow",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "流程",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/flow/flowDetail",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "流程详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/office/application/flow/flowAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "添加",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/set_tab/set_tab",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "tab",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/swipe_action/swipe_action",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "滑动操作",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/md_editor/md_editor",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "富文本编辑",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/gesture/gesture",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "滑动操作",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/vibrate/vibrate",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "震动",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/brightness/brightness",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "屏幕亮度",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/save_media/save_media",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "媒体存储",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/scheme/scheme",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "第三方应用",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/pagination/pagination",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "分页器",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/index_list/index_list",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "索引列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/community/community",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "社区帖子",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/community/community_details/community_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "帖子详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/video_uniapp/video_uniapp",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "视频",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/audio/audio",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "audio",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/movable_view/movable_view",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "拖拽缩放",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/getUserInfo/getUserInfo",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "获取用户信息",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/noticeBar/noticeBar",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "通告栏",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/qrcode/qrcode",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "二维码生成器",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/about/about",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "关于",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/alert/alert",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "动画消息提醒",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/register/register",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "注册",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/password/password",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "修改密码",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/about/intro/intro",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "简介",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/connection/connection",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的人脉圈",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/favorite/favorite",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/check/check",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的考勤",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/notiToggle/notiToggle",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "勿扰模式",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/security/security",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "账号与安全",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/notice/notice",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "消息通知",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/fingerprint/fingerprint",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "指纹识别",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/setting/on-compass-change/on-compass-change",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "监听罗盘数据",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/music/music",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "音乐",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/icon/icon",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "图标",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/drawer/drawer",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "抽屉",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/verticalnav/verticalnav",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "垂直导航",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/bar/bar",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "操作条",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/list/list",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/card/card",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "卡片",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/chat/chat",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "聊天",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/function/function",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "应用",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/function/chooseUser",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "组织机构",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/organize/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "组织机构",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/scheduler/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "我的日程",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/scheduler/addScheduler",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "新建日程",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/scheduler/scheduler_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "日程详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/document/document",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "公文",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/document/document_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "公文详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/document/document_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "公文新建",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/document/viewFile",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "起草公文",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/attendance/attendance",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "考勤打卡",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/attendance/attendance_census",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "考勤统计",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/emails/emails",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "邮件",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/emails/emails_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "邮件详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/office_supplie/office_supplie",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "办公用品",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/office/application/office_supplie/office_supplie_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "用品详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/office_supplie/office_supplie_apply",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "用品申请",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/approval/approval",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "OA审批",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/approval/approval_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "审批详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/financial/financial",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "财务管理",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/office/application/financial/financial_approval",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "财务审核",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, {
+			"path": "pages/office/application/financial/approval_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "审核详情",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/financial/approval_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "发起申请",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/process/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "流程图",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/office/application/sign/sign",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "电子签名",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/office/application/seal/seal",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "电子印章",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/list/list",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单列表",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/list/listView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/model/from/from",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单模板",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/from/fromView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单模板",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/from/fromDetail",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单详情",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/model/from/fromDetailView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单详情",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/office/crm/index",
+			"style": {
+				"navigationBarTitleText": "明图科技客户关系管理系统",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/office/crm/sort/sortIndex",
+			"style": {
+				"navigationBarTitleText": "客户列表",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/office/crm/sort/index",
+			"style": {
+				"navigationBarTitleText": "客户列表 - 所有客户",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		}, {
+			"path": "pages/office/crm/details",
+			"style": {
+				"navigationBarTitleText": "客户详情",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/office/crm/followUp",
+			"style": {
+				"navigationBarTitleText": "跟踪信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/office/crm/edit",
+			"style": {
+				"navigationBarTitleText": "客户信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/office/crm/sort/collapseList",
+			"style": {
+				"navigationBarTitleText": "客户列表 - 同IP客户",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/office/application/seal/sealTest",
+			"style": {
+				"navigationBarTitleText": "电子印章",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/test/table/table",
+			"style": {
+				"navigationBarTitleText": "表格",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/test/table/tableFixed",
+			"style": {
+				"navigationBarTitleText": "固定项表格",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/office/application/office_supplie/edit",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/test/index",
+			"style": {
+				"navigationBarTitleText": "测试",
+				"enablePullDownRefresh": false
+			}
+
+		},{
+			"path" : "pages/test/demo",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+			}
+		},{
+			"path" : "pages/test/demo2",
+			"style" :                                                                                    
+			{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+			}
+		}
+  ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "明图科技",
+		"navigationBarBackgroundColor": "#3b9cff",
+		"backgroundColor": "#3b9cff",
+		"navigationStyle": "default"
+	},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#3b9cff",
+		"borderStyle": "#e7e7e7",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/office/artcile/artcile",
+				"iconPath": "static/img/icon/read.png",
+				"selectedIconPath": "static/img/icon/s_read.png",
+				"text": "办公"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/img/icon/home.png",
+				"selectedIconPath": "static/img/icon/s_home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/img/icon/mine.png",
+				"selectedIconPath": "static/img/icon/s_mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		"current": 1,
+		"list": [{
+			"name": "首页",
+			"path": "pages/index/guide",
+			"query": ""
+		}]
+	}
+}

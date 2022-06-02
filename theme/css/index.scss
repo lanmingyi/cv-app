@@ -1,0 +1,283 @@
+/*
+@mixin 指令允许我们定义一个可以在整个样式表中重复使用的样式。
+*/
+// $custom-font-main: #3b9cff;  //主字体颜色
+
+// // 标题配色
+// $custom-font-color-main: #000000;  //主字体颜色
+// $custom-font-size-main: 28upx;
+// // 8788A3
+// $custom-font-color-second: #333333;  //次级标题字体颜色
+// $custom-font-size-second: 26upx;
+// $custom-font-color-three: #909399;  //三级标题字体颜色
+// $custom-font-size-three: 24upx;
+// $custom-font-color-light: #333333;  //强调字体颜色
+// $custom-font-size-light: 24upx;
+// $custom-font-color-tip: #333333;  //提示字体颜色
+// $custom-font-size-tip: 24upx;
+
+// // 背景配色
+// $custom-bg-nav: #ffffff;  //自定义导航栏颜色
+// $custom-bg-main: #3b9cff;  //主要背景  ---- app导航栏颜色
+// $custom-bg-page: #f3f3f3;  //页面背景
+// $custom-bg-box: #ffffff;  //组件、盒子背景
+
+// //图标配色
+// $icon-font-color-default: #ffffff; //默认icon
+// $icon-bg-color-default: #3b9cff;
+// // 6699ff
+
+// $icon-font-size-default: 24upx;
+
+// $icon-font-color-main: #99CCFF; //一级icon
+// $icon-bg-color-main: #e6f2ff;
+// $icon-font-size-main: 24upx;
+// $icon-font-color-second: #FFCC99; //二级icon
+// $icon-bg-color-second: #fce8ce;
+// $icon-font-size-second: 24upx;
+// $icon-font-color-three: #96d39e; //三级icon
+// $icon-bg-color-three: #defce7;
+// $icon-font-size-three: 24upx;
+
+// // 标签配色
+// $tag-font-color-default: #5aa7f7; //默认tag
+// $tag-bg-color-default: #fce8ce;
+// $tag-font-size-default: 24upx;
+
+// $tag-font-color-main: #FF6666; //一级tag
+// $tag-bg-color-main: #e6f2ff;
+// $tag-font-size-main: 24upx;
+// $tag-font-color-second: #5aa7f7; //二级tag
+// $tag-bg-color-second: #fce8ce;
+// $tag-font-size-second: 24upx;
+// $tag-font-color-three: #39b54a; //三级tag
+// $tag-bg-color-three: #defce7;
+// $tag-font-size-three: 24upx;
+// $tag-font-color-four: #FF9933; //四级tag
+// $tag-bg-color-four: #fce8ce;
+// $tag-font-size-four: 24upx;
+
+// //按钮背景配色
+// $custom-botton-bg-submit: #3b9cff;  //提交按钮
+// $custom-botton-bg-delete: #FF6666;   //删除、驳回按钮
+
+
+// //提示字体颜色
+// $custom-botton-bg-tips: #ff0000;   //删除、驳回按钮
+// $text-font-color-default: #303030;
+
+
+
+
+/* 自定义样式 可用于切换主题*/
+	.container {
+		width: 100%;
+		position: relative;
+		background: $custom-bg-page;
+	}
+	
+	
+	// 字体样式    start
+	.font-main{
+		color: $custom-font-color-main;//主要字体颜色
+		font-size: $custom-font-size-main;
+	}
+	.font-second{
+		color: $custom-font-color-second;//次级标题字体颜色
+		font-size: $custom-font-size-second;
+	}
+	.font-three{
+		color: $custom-font-color-three;//三级标题字体颜色
+		font-size: $custom-font-size-three;
+	}
+	.font-light{
+		color: $custom-font-color-light; //强调字体颜色
+		font-size: $custom-font-size-second;
+	}
+	.font-prominent{
+		font-size: 16px;
+	}
+	// 字体样式    end
+	
+	
+	// 背景样式    start
+	.bg-main{
+		background-color: $custom-bg-main;//主要背景配色
+	}
+	.bg-page{
+		background-color: $custom-bg-page;//页面背景配色
+	}
+	.bg-box{
+		background-color: $custom-bg-box;//组件盒子背景配色
+	}
+	// 背景样式    end
+	
+	
+	// 图标样式    start
+	.icon-default{
+		color: #fff;
+		font-size: $icon-font-size-default;
+		background-color: $icon-bg-color-default;
+	}
+	.icon-title-main{
+		font-size: 34rpx;
+		color: $icon-bg-color-default;
+	}
+	.icon-text-color{
+		color: $icon-bg-color-default;
+		font-size: $custom-font-size-main;
+	}
+	.icon-box-color{
+		color: #f40;
+		font-size: $custom-font-size-main;
+	}
+	.icon-main{
+		color: $icon-font-color-main;
+		font-size: $icon-font-size-default;
+		background-color: $icon-bg-color-main;
+	}
+	.icon-bg-main{
+		color: #fff;
+		background-color: $icon-font-color-main;
+	}
+	.icon-color-main{
+		color: $icon-font-color-main;
+		font-size: $icon-font-size-default;
+	}
+	.icon-second{
+		color: $icon-font-color-second;
+		font-size: $icon-font-size-default;
+		background-color: $icon-bg-color-second;
+	}
+	.icon-bg-second{
+		color: #fff;
+		background-color: $icon-font-color-second;
+	}
+	.icon-color-second{
+		color: $icon-font-color-second;
+		font-size: $icon-font-size-default;
+	}
+	.icon-three{
+		color: $icon-font-color-three;
+		font-size: $icon-font-size-default;
+		background-color: $icon-bg-color-three;
+	}
+	.icon-bg-three{
+		color: #fff;
+		background-color: $icon-font-color-three;
+	}
+	.icon-color-three{
+		font-size: $icon-font-size-default;
+		color: $icon-font-color-three;
+	}
+	// 图标样式    end
+	
+	
+	// tag样式    start
+	.tag-default{
+		color: $tag-font-color-default;
+		font-size: $tag-font-size-default;
+		background-color: $tag-bg-color-default;
+	}
+	.tag-bg-default{
+		color: #fff;
+		background-color: $tag-font-color-default;
+	}
+	.tag-text-default{
+		color: $tag-font-color-default;
+		font-size: $custom-font-size-second;
+	}
+	.tag-default{
+		color: $tag-font-color-default;
+		font-size: $tag-font-size-default;
+		background-color: $tag-bg-color-default;
+	}
+	.tag-bg-main{
+		color: #fff;
+		background-color: $tag-font-color-main;
+	}
+	.tag-text-main{
+		color: $tag-font-color-main;
+		font-size: $custom-font-size-second;
+	}
+	.tag-second{
+		color: $tag-font-color-second;
+		font-size: $tag-font-size-second;
+		background-color: $tag-bg-color-second;
+	}
+	.tag-bg-second{
+		color: #fff;
+		background-color: $tag-font-color-second;
+	}
+	.tag-text-second{
+		color: $tag-font-color-second;
+		font-size: $custom-font-size-second;
+	}
+	.tag-three{
+		color: $tag-font-color-three;
+		font-size: $tag-font-size-three;
+		background-color: $tag-bg-color-three;
+	}
+	.tag-bg-three{
+		color: #fff;
+		background-color: $tag-font-color-three;
+	}
+	.tag-text-three{
+		color: $tag-font-color-three;
+		font-size: $custom-font-size-second;
+	}
+	.tag-four{
+		color: $tag-font-color-four;
+		font-size: $tag-font-size-four;
+		background-color: $tag-bg-color-four;
+	}
+	.tag-bg-four{
+		color: #fff;
+		background-color: $tag-font-color-four;
+	}
+	.tag-text-four{
+		color: $tag-font-color-four;
+		font-size: $custom-font-size-second;
+	}
+	// tag样式    end
+	
+	
+	// 按钮样式    start
+	.cu-botton-submit{
+		background-color: $custom-botton-bg-submit;//提交按钮
+		color: #fff;
+	}
+	.cu-botton-delete{
+		background-color: $custom-botton-bg-delete;//删除按钮
+		color: #fff;
+	}
+	.cu-color-submit{
+		color :$custom-botton-bg-submit
+	}
+	.cu-color-delete{
+		color :$custom-botton-bg-delete
+	}
+	// 按钮样式    end
+	
+	.text-default{
+		color: $text-font-color-default;  //符合主题字体颜色
+	}
+	.cu-botton-text-tips{
+		color: $custom-botton-bg-tips;//着重提示字体颜色
+	}
+	.cu-color-icon{
+		color: #929292;//表单icon颜色
+	}
+	
+	.text-box-line{
+		height:20upx;
+		background-color: $custom-bg-page;
+	}
+	
+	.absolute-box{
+		width: 100rpx;
+		height: 100rpx;
+		line-height: 100rpx;
+		text-align: center;
+		border-radius: 50%;
+	}

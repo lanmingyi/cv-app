@@ -1,0 +1,464 @@
+/*
+@mixin 指令允许我们定义一个可以在整个样式表中重复使用的样式。
+*/
+//自定义--------开始
+
+$custom-font-main: #3b9cff;
+$custom-bg-page: #f3f3f3;
+$tag-font-color-second: #5aa7f7;
+
+//自定义-------结束
+
+
+// 系统默认主题的变量集合
+$default-theme : (
+	bg_box:#ffffff,//组件盒子背景色
+	bg_page: #f3f3f3, //页面背景色
+	bg_page_light: #e7e7e7,//页面背景色反色值
+	theme_main : #33A7FF, //整个主图基准色
+	text_light_color:#333333,//强调字体颜色
+	text_tips_color:#333333,//提示字体颜色
+	text_main_color: #000000, //一级标题颜色
+	text_second_color: #333333,//二级标题颜色
+	text_three_color:#909399,//三级标题颜色
+	text_light_font: 24rpx,
+	text_main_font: 28rpx,
+	text_second_font: 26rpx,
+	text_three_font: 24rpx,
+	icon_default_color:#ffffff,//默认图标颜色
+	icon_main_color: #99CCFF, //一级图标颜色
+	icon_second_color: #FFCC99,//二级图标颜色
+	icon_three_color:#96d39e,//三级图标颜色
+	icon_default_bg:#33A7FF,
+	icon_main_bg: #e6f2ff,
+	icon_second_bg: #fce8ce,
+	icon_three_bg:#defce7,
+	icon_default_font: 24rpx,
+	icon_main_font: 24rpx,
+	icon_second_font: 24rpx,
+	icon_three_font: 24rpx,
+	tag_default_color:#33A7FF,//默认tag颜色
+	tag_main_color: #FF6666,//一级tag颜色
+	tag_second_color: #5aa7f7,//二级tag颜色
+	tag_three_color: #39b54a,//三级tag颜色
+	tag_four_color: #FF9933,//四级tag颜色
+	tag_default_bg:#fce8ce,
+	tag_main_bg: #e6f2ff,
+	tag_second_bg: #fce8ce,
+	tag_three_bg:#defce7,
+	tag_four_bg: #fce8ce,
+	tag_default_font: 24rpx,
+	tag_main_font: 24rpx,
+	tag_second_font: 24rpx,
+	tag_three_font: 24rpx,
+	tag_four_font: 24rpx,
+	bt_submit_bg: #33A7FF,//提交按钮
+	bt_delete_bg: #FF6666,//删除、驳回按钮
+	bt_tips_bg: #ff0000,//提示字体颜色
+  text_color: rgb(22, 194, 194),//字体颜色
+);
+// 经典绿色主题的变量集合
+$green-theme : (
+  bg_box: #ffffff,//组件盒子背景色
+	bg_page: #f3f3f3, //页面背景色
+	bg_page_light: #e7e7e7,//页面背景色反色值
+	theme_main : #39b54a, //整个主图基准色
+	text_light_color:#333333,//强调字体颜色
+	text_tips_color:#333333,//提示字体颜色
+	text_main_color: #000000, //一级标题颜色
+	text_second_color: #333333,//二级标题颜色
+	text_three_color:#909399,//三级标题颜色
+  text_light_font: 24rpx,
+  text_main_font: 28rpx,
+  text_second_font: 26rpx,
+  text_three_font: 24rpx,
+  icon_default_color:#ffffff,//默认图标颜色
+  icon_main_color: #a4e6b2, //一级图标颜色
+  icon_second_color: #ffbb54,//二级图标颜色
+  icon_three_color:#ffc993,//三级图标颜色
+  icon_default_bg:#39b54a,
+  icon_main_bg: #e6f2ff,
+  icon_second_bg: #fce8ce,
+  icon_three_bg:#defce7,
+  icon_default_font: 24rpx,
+  icon_main_font: 24rpx,
+  icon_second_font: 24rpx,
+  icon_three_font: 24rpx,
+  tag_default_color:#39b54a,//默认tag颜色
+  tag_main_color: #ff760b,//一级tag颜色
+  tag_second_color: #99CC66,//二级tag颜色
+  tag_three_color: #00d2aa,//三级tag颜色
+  tag_four_color: #FF9966,//四级tag颜色
+  tag_default_bg:#fce8ce,
+  tag_main_bg: #e6f2ff,
+  tag_second_bg: #fce8ce,
+  tag_three_bg:#defce7,
+  tag_four_bg: #fce8ce,
+  tag_default_font: 24rpx,
+  tag_main_font: 24rpx,
+  tag_second_font: 24rpx,
+  tag_three_font: 24rpx,
+  tag_four_font: 24rpx,
+  bt_submit_bg: #39b54a,//提交按钮
+  bt_delete_bg: #CC9933,//删除、驳回按钮
+  bt_tips_bg: #339966,//提示字体颜色
+);
+// 黑色主题的变量集合
+$black-theme : (
+	bg_box:#001529,//组件盒子背景色
+	bg_page: #001529, //页面背景色
+	bg_page_light: #929292,//页面背景色反色值
+	theme_main : #e7e7e7, //整个主图基准色
+	text_light_color:#f3f3f3,//强调字体颜色
+	text_tips_color:#f3f3f3,//提示字体颜色
+	text_main_color: #f3f3f3, //一级标题颜色
+	text_second_color: #f5f5f5,//二级标题颜色
+	text_three_color:#f5f5f5,//三级标题颜色
+	text_light_font: 24rpx,
+	text_main_font: 28rpx,
+	text_second_font: 26rpx,
+	text_three_font: 24rpx,
+	icon_default_color:#ffffff,//默认图标颜色
+	icon_main_color: #99CCFF, //一级图标颜色
+	icon_second_color: #FFCC99,//二级图标颜色
+	icon_three_color:#96d39e,//三级图标颜色
+	icon_default_bg:#3b9cff,
+	icon_main_bg: #e6f2ff,
+	icon_second_bg: #fce8ce,
+	icon_three_bg:#defce7,
+	icon_default_font: 24rpx,
+	icon_main_font: 24rpx,
+	icon_second_font: 24rpx,
+	icon_three_font: 24rpx,
+	tag_default_color:#5aa7f7,//默认tag颜色
+	tag_main_color: #FF6666,//一级tag颜色
+	tag_second_color: #5aa7f7,//二级tag颜色
+	tag_three_color: #39b54a,//三级tag颜色
+	tag_four_color: #FF9933,//四级tag颜色
+	tag_default_bg:#fce8ce,
+	tag_main_bg: #e6f2ff,
+	tag_second_bg: #fce8ce,
+	tag_three_bg:#defce7,
+	tag_four_bg: #fce8ce,
+	tag_default_font: 24rpx,
+	tag_main_font: 24rpx,
+	tag_second_font: 24rpx,
+	tag_three_font: 24rpx,
+	tag_four_font: 24rpx,
+	bt_submit_bg: #3b9cff,//提交按钮
+	bt_delete_bg: #FF6666,//删除、驳回按钮
+	bt_tips_bg: #ff0000,//提示字体颜色
+  text_color: rgb(22, 194, 194),//字体颜色
+);
+//定义主题对象
+// $themes: (// key为主题  value为主题的变量集合
+//   default-theme: $default-theme,
+//   green-theme: $green-theme,
+// );
+
+
+@mixin theme ($theme) {
+		background-color: map-get($map: $theme, $key: bg_page);
+	
+	/* 自定义样式 可用于切换主题*/
+		// 字体样式    start
+		.font-main{
+			color: map-get($map: $theme, $key: text_main_color);
+			font-size: map-get($map: $theme, $key: text_main_font);
+		}
+		.font-second{
+			color: map-get($map: $theme, $key: text_second_color);
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		.font-three{
+			color: map-get($map: $theme, $key: text_three_color);
+			font-size: map-get($map: $theme, $key: text_three_font);
+		}
+		.font-light{
+			color: map-get($map: $theme, $key: text_light_color);
+			font-size: map-get($map: $theme, $key: text_light_font);
+		}
+		.font-prominent{
+			font-size: 16px;
+		}
+		.text-main-title{
+			color: map-get($map: $theme, $key: text_main_color);
+		}
+		.text-theme{
+			color: map-get($map: $theme, $key: theme_main);//符合主题背景配色
+		}
+		// 字体样式    end
+		// 背景样式    start
+		.bg-main{
+			background-color: map-get($map: $theme, $key: bg_box);//主要背景配色
+		}
+		.bg-page{
+			background-color: map-get($map: $theme, $key: bg_box);//页面背景配色
+		}
+		.bg-box{
+			background-color: map-get($map: $theme, $key: bg_box);//组件盒子背景配色
+		}
+		.bg-theme{
+			background-color: map-get($map: $theme, $key: theme_main);//符合主题背景配色
+		}
+		.bg-theme-anamorphism{
+			background: linear-gradient(to bottom, map-get($map: $theme, $key: theme_main), transparent); //主题背景渐变色
+		}
+		// 背景样式    end
+		// 图标样式    start
+		.icon-default{
+			color: #fff;
+			font-size: map-get($map: $theme, $key: icon_default_font);
+			background-color: map-get($map: $theme, $key: icon_default_bg);
+		}
+		.icon-title-main{
+			font-size: 34rpx;
+			color: map-get($map: $theme, $key: icon_default_bg);
+		}
+		.icon-text-color{
+			color: map-get($map: $theme, $key: icon_default_bg);
+			font-size: map-get($map: $theme, $key: text_main_font);
+		}
+		.icon-box-color{
+			color: map-get($map: $theme, $key: bt_delete_bg);
+			font-size: map-get($map: $theme, $key: text_main_font);
+		}
+		.icon-main{
+			color: map-get($map: $theme, $key: icon_main_color);
+			font-size: map-get($map: $theme, $key: icon_default_font);
+			background-color: map-get($map: $theme, $key: icon_main_bg);
+		}
+		.icon-bg-main{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: icon_main_color);
+		}
+		.icon-color-main{
+			color: map-get($map: $theme, $key: icon_main_color);
+			font-size: map-get($map: $theme, $key: icon_default_font);
+		}
+		.icon-second{
+			color: map-get($map: $theme, $key: icon_second_color);
+			font-size: map-get($map: $theme, $key: icon_default_font);
+			background-color: map-get($map: $theme, $key: icon_second_bg);
+		}
+		.icon-bg-second{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: icon_second_color);
+		}
+		.icon-color-second{
+			color: map-get($map: $theme, $key: icon_second_color);
+			font-size: map-get($map: $theme, $key: icon_default_font);
+		}
+		.icon-three{
+			color: map-get($map: $theme, $key: icon_three_color);
+			font-size: map-get($map: $theme, $key: icon_three_font);
+			background-color: map-get($map: $theme, $key: icon_three_bg);
+		}
+		.icon-bg-three{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: icon_three_color);
+		}
+		.icon-color-three{
+			color: map-get($map: $theme, $key: icon_three_color);
+			font-size: map-get($map: $theme, $key: icon_three_font);
+		}
+		// 图标样式    end
+		
+		
+		// tag样式    start
+		.tag-default{
+			color: map-get($map: $theme, $key: tag_default_color);
+			font-size: map-get($map: $theme, $key: tag_default_font);
+			background-color: map-get($map: $theme, $key: tag_default_bg);
+		}
+		.tag-bg-default{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: tag_default_color);
+		}
+		.tag-text-default{
+			color: map-get($map: $theme, $key: tag_default_color);
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		.tag-main{
+			color: map-get($map: $theme, $key: tag_main_color);
+			font-size: map-get($map: $theme, $key: tag_main_font);
+			background-color: map-get($map: $theme, $key: tag_main_bg);
+		}
+		.tag-bg-main{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: tag_main_color);
+		}
+		.tag-text-main{
+			color: map-get($map: $theme, $key: tag_main_color);
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		.tag-second{
+			color: map-get($map: $theme, $key: tag_second_color);
+			font-size: map-get($map: $theme, $key: tag_second_font);
+			background-color: map-get($map: $theme, $key: tag_second_bg);
+		}
+		.tag-bg-second{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: tag_second_color);
+		}
+		.tag-text-second{
+			color: $tag-font-color-second;
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		.tag-three{
+			color: map-get($map: $theme, $key: tag_three_color);
+			font-size: map-get($map: $theme, $key: tag_three_font);
+			background-color: map-get($map: $theme, $key: tag_three_bg);
+		}
+		.tag-bg-three{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: tag_three_color);
+		}
+		.tag-text-three{
+			color: map-get($map: $theme, $key: tag_three_color);
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		.tag-four{
+			color: map-get($map: $theme, $key: tag_four_color);
+			font-size: map-get($map: $theme, $key: tag_four_font);
+			background-color: map-get($map: $theme, $key: tag_four_bg);
+		}
+		.tag-bg-four{
+			color: #fff;
+			background-color: map-get($map: $theme, $key: tag_four_color);
+		}
+		.tag-text-four{
+			color: map-get($map: $theme, $key: tag_four_color);
+			font-size: map-get($map: $theme, $key: text_second_font);
+		}
+		// tag样式    end
+		
+		
+		// 按钮样式    start
+		.cu-botton-submit{
+			background-color: map-get($map: $theme, $key: bt_submit_bg);//提交按钮
+			color: #fff;
+		}
+		.cu-botton-delete{
+			background-color: map-get($map: $theme, $key: bt_delete_bg);//删除按钮
+			color: #fff;
+		}
+		.cu-color-submit{
+			color : map-get($map: $theme, $key: bt_submit_bg)
+		}
+		.cu-color-delete{
+			color : map-get($map: $theme, $key: bt_delete_bg)
+		}
+		// 按钮样式    end
+		
+		.text-default{
+			color: map-get($map: $theme, $key: text_font_color);  //符合主题字体颜色
+		}
+		.cu-botton-text-tips{
+			color: map-get($map: $theme, $key: bt_tips_bg);//着重提示字体颜色
+		}
+		.cu-color-icon{
+			color: #929292;//表单icon颜色
+		}
+		
+		.text-box-line{
+			height:20upx;
+			background-color: map-get($map: $theme, $key: bg_page);
+		}
+		
+		/* 边框 */
+		
+		.border-bottom-dashed {
+			border-bottom: 1px dashed map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-top-dashed {
+			border-top: 1px dashed map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-top {
+			border-top: 1px solid map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-center {
+			height: 15px;
+			width: 1rpx;
+			border-right: 1px solid map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-bottom {
+			border-bottom: 1px solid map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-bottom-none {
+			border-bottom: none !important;
+		}
+		.border-bottom-none::after {
+			border-bottom-width: 0 !important;
+		}
+		.border-top-none {
+			border-top: none !important;
+		}
+		.border-top-none::after {
+			border-top-width: 0 !important;
+		}
+		.border {
+			border: 1px solid map-get($map: $theme, $key: bg_page_light);
+		}
+		.border-box {
+			border: 1px solid map-get($map: $theme, $key: bg_page_light);
+		}
+		.box-item-list:last-child .border-bottom {
+			border: none;
+		}
+		//按钮  end 
+		
+		//表单  start
+		/deep/.u-form-item--left__content__label {
+			font-size: 13px;
+			color: map-get($map: $theme, $key: text_main_color)
+		}
+		/deep/.u-form-item--right__content__slot .uni-input-input{
+			color : map-get($map: $theme, $key: text_main_color)
+		}
+		/deep/.u-form-item--right__content__slot .uni-textarea-textarea {
+			color : map-get($map: $theme, $key: text_main_color)
+		}
+		//表单  end
+		
+		/* 文章 */
+		.article-content p{
+			font-size: 30rpx;
+			font-family: 宋体;
+			color: map-get($map: $theme, $key: text_main_color);
+		}
+}
+
+.container {
+	width: 100vw;
+	position: relative;
+	overflow: hidden scroll;
+	// @include theme("#{vtheme}")
+}
+
+.container-box{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden scroll;
+}
+
+.absolute-box{
+	width: 100rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.default-theme{
+	@include theme($default-theme)
+}
+
+.green-theme{
+	@include theme($green-theme)
+}
+
+.black-theme{
+	@include  theme($black-theme)
+}

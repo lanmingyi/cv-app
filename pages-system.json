@@ -1,0 +1,1282 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/index/guide",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/login/author",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "企业微信授权登录",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "首页",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"float": "right",
+							"text": "\ue685",
+							"fontSrc": "/static/iconfont.ttf",
+							"width": "40px",
+							"fontSize": "22px",
+							"color": "#fff",
+							"background": "#3b9cff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/component/bluetooth/bluetooth",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "蓝牙"
+			}
+		},
+		{
+			"path": "pages/mine/mine_details/mine_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTextStyle": "white",
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		{
+			"path": "pages/system/telephone/telephone",
+			"style": {
+				"navigationBarTitleText": "通讯录"
+			}
+		},
+		{
+			"path": "pages/mine/setting/setting",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "系统设置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/mine/myQR/myQR",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "二维码",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/feature",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "功能",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark" 
+			}
+		},
+		{
+			"path": "pages/system/telephone/chat/chat",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "设置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+
+		{
+			"path": "pages/system/artcile/artcile",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "新闻资讯",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/article_details/article_details",
+			"style": {
+				"navigationBarTitleText": "文章详情",
+				"navigationBarTextStyle": "white",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/mine/feedback/feedback",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "信息反馈",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/echarts/echarts",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "echarts图表",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/up_images/up_images",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "上传图片",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/wxcharts/wxcharts",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "图表",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/crop/crop",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "图片裁剪",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/telephone/u_details/u_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "个人信息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/voice/voice",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "录音",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/bg_audio/bg_audio",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "背景音频",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/upload_file/upload_file",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "上传文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/download_file/download_file",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "下载文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/file/file",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "文件",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/push/push",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "消息推送",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/speech/speech",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "录音",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/payment/payment",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "支付",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_network_type/get_network_type",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "网络",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_system_info/get_system_info",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "系统信息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/scan_code/scan_code",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "扫码",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/clipboard/clipboard",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "剪贴",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/get_location/get_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "当前位置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/open_location/open_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "当前位置",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/choose_location/choose_location",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "地图",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/button/button",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "按钮",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/checkbox/checkbox",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "选择框",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/form/form",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "表单",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/input/input",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "input",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/label/label",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "label",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/picker/picker",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "picker",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/picker-view/picker-view",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "picker-view",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/radio/radio",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "radio",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/slider/slider",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "slider",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/textarea/textarea",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "textarea",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/switch/switch",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "switch",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/video/video",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "video",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/table/table",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "table",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/data-table/data-table",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "data-table",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/select/select",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "select",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/date/date",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "date",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/select_info/select_info",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "下拉框",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/share/share",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "分享",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/login/login",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "登录",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/swiper/swiper",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "轮播图",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/mpvue-picker/mpvue-picker",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "多列选择",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/lotteryDraw/lotteryDraw",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "抽奖活动",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/lazyload/lazyload",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "懒加载",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/telephone/htmlchat/htmlchat",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		// {
+		//     "path" : "pages/system/telephone/contact/contact",
+		//     "style" : {
+		//         "navigationBarBackgroundColor" : "#3aaafe",
+		//         "navigationBarTitleText" : "联系人",
+		//         "navigationBarTextStyle" : "white"
+		//     }
+		// },
+		{
+			"path": "pages/system/telephone/message/message",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "消息",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/modal/modal",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "弹窗",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/canvas/canvas",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "创建绘画",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/leave/leave",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "休假",
+				"navigationBarTextStyle": "white"
+
+			}
+		},
+		{
+			"path": "pages/system/application/leave/leaveEdit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/leave/leaveDetails",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "休假详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/leave/leaveAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "新增",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/animate/animate",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "动画库",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/timeline/timeline",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "时间轴",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/steps/steps",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "步骤",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/progressbar/progressbar",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "进度条",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/badge/badge",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "数字角标",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/overtime/overtime",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "加班",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/overtime/overtime_details/overtime_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "加班详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/overtime/overtime_edit/overtime_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/overtime/overtime_add/overtime_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加加班",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/conference/conference",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "会议",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/conference/conference_details/conference_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "会议详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/conference/conference_add/conference_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加会议",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/conference/conference_edit/conference_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/used_cars/used_cars",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "用车",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/used_cars/used_details/used_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "用车详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/used_cars/used_add/used_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加用车",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/used_cars/used_edit/used_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/evection/evection",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "出差",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/evection/evection_add/evection_add",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/evection/evection_edit/evection_edit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/evection/evection_details/evection_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "出差详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/task/task",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "任务",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/task/taskAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加任务",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/task/taskDetails",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "任务详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/task/taskEdit",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "编辑",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/journal/journal",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "日志",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/journal/daily/daily",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "日报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/journal/weekly/weekly",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "周报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/journal/monthly/monthly",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "月报",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/notice/notice",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "公告",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/test/test",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "测试",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/count_down/count_down",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "倒计时",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/feature/star/star",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "评分",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/telephone/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"app-plus": {
+					"titleNView": {
+						"titleColor": "#3aaafe",
+						"backgroundColor": "#3aaafe",
+						"buttons": [{
+							"fontSrc": "/static/uni.ttf",
+							"text": "\ue537",
+							"width": "auto",
+							"fontSize": "28px",
+							"color": "#fff"
+						}],
+						"searchInput": {
+							"backgroundColor": "#fff",
+							"borderRadius": "6px",
+							"placeholder": "根据姓名搜索",
+							"autoFocus": true
+						}
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/system/application/circulate/circulate",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "传阅",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/circulate/circulate_details/circulate_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "传阅详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/flow/flow",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "流程",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/flow/flowDetail",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "流程详情",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/system/application/flow/flowAdd",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "添加",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/set_tab/set_tab",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "tab",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/swipe_action/swipe_action",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "滑动操作",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/md_editor/md_editor",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "富文本编辑",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/gesture/gesture",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "滑动操作",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/vibrate/vibrate",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "震动",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/brightness/brightness",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "屏幕亮度",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/save_media/save_media",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "媒体存储",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/scheme/scheme",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "第三方应用",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/pagination/pagination",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "分页器",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/index_list/index_list",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "索引列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/system/application/community/community",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "社区帖子",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/system/application/community/community_details/community_details",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "帖子详情",
+				"navigationBarTextStyle": "white"
+			}
+		}
+
+		, {
+			"path": "pages/feature/video_uniapp/video_uniapp",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "视频",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/component/audio/audio",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "audio",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/movable_view/movable_view",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "拖拽缩放",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/getUserInfo/getUserInfo",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "获取用户信息",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/noticeBar/noticeBar",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "通告栏",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/qrcode/qrcode",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "二维码生成器",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/about/about",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "关于",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/alert/alert",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "动画消息提醒",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/register/register",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "注册",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/about/intro/intro",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "简介",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/connection/connection",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "我的人脉圈",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/favorite/favorite",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/check/check",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "我的考勤",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/notiToggle/notiToggle",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "勿扰模式",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/security/security",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "账号与安全",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/notice/notice",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "消息通知",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/fingerprint/fingerprint",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "指纹识别",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/mine/setting/on-compass-change/on-compass-change",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "监听罗盘数据",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/music/music",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "音乐",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/icon/icon",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "图标",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/drawer/drawer",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "抽屉",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/verticalnav/verticalnav",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "垂直导航",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/feature/bar/bar",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "操作条",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/list/list",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/card/card",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "卡片",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/component/chat/chat",
+			"style": {
+				"navigationBarBackgroundColor": "#3aaafe",
+				"navigationBarTitleText": "聊天",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/model/list/list",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单列表",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		
+		}, {
+			"path": "pages/model/list/listView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单列表",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/model/from/from",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单模板",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		
+		}, {
+			"path": "pages/model/from/fromView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单模板",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/model/from/fromDetail",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单详情",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		
+		}, {
+			"path": "pages/model/from/fromDetailView",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "表单详情",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/password/password",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "密码",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/organize/index",
+			"style": {
+				"navigationBarBackgroundColor": "#3b9cff",
+				"navigationBarTitleText": "通讯录",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "app",
+		"navigationBarBackgroundColor": "#3aaafe",
+		"backgroundColor": "#3aaafe",
+		"navigationStyle": "default"
+	},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#3aaafe",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/system/artcile/artcile",
+				"iconPath": "static/img/icon/read.png",
+				"selectedIconPath": "static/img/icon/s_read.png",
+				"text": "文章"
+			},
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/img/icon/home.png",
+				"selectedIconPath": "static/img/icon/s_home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/img/icon/mine.png",
+				"selectedIconPath": "static/img/icon/s_mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		"current": 1,
+		"list": [{
+			"name": "首页",
+			"path": "pages/index/guide",
+			"query": ""
+		}]
+	}
+}
